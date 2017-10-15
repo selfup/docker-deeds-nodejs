@@ -1,10 +1,10 @@
 module.exports = {
-  "extends": "airbnb-base",
-  "plugins": [
-    "html"
-  ],
-  "globals": {
-    "document": true,
-    "window": true,
-  },
+    "extends": "airbnb",
+    "plugins": [
+        "html"
+    ],
+    "globals": {
+        "document": true,
+        "window": true,
+    },
 };
