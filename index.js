@@ -7,7 +7,9 @@ const dockerSpecificProcessEvents = require('./docker-process');
 const PORT = process.env.PORT;
 const app = express();
 
-app.use(morgan('common'));
+(process.env.NODE_ENV === 'production')
+  ? app.use(morgan('tiny'))
+  : app.use(morgan('common'));
 
 app.get('/', (req, res) => {
   res.send('Hello World\n');
