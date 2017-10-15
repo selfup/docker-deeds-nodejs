@@ -6,10 +6,10 @@ services:
       context: .
       args:
         - NODE_ENV=development
-    
-    # use FS events on *nix
-    command: ../node_modules/.bin/nodemon --inspect=0.0.0.0:4343
 
+    # windows needs legacy watch to work
+    command: ../node_modules/.bin/nodemon --legacy-watch --inspect=0.0.0.0:4343
+    
     ports:
       - "8080:8080"
     volumes:

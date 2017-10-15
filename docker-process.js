@@ -3,15 +3,14 @@ const shutdown = (server) => {
     if (err) {
       console.error(err);
       process.exitCode = 1;
+    } else {
+      process.exit();
     }
-
-    process.exit();
   });
 };
 
-const dockerSpecificProcessEvents = (server) => {
+const dockerSpecificProcessEvents = () => {
   process.on('SIGINT', shutdown);
-
   process.on('SIGTERM', shutdown);
 };
 

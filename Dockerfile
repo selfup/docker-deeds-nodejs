@@ -9,8 +9,6 @@ ARG PORT=8080
 ENV PORT $PORT
 EXPOSE $PORT 4242 4343
 
-HEALTHCHECK CMD curl -fs http://localhost:$PORT/ || exit 1
-
 WORKDIR /opt
 COPY package.json /opt
 RUN npm install && npm cache clean --force
