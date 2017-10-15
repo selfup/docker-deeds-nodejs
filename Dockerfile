@@ -1,7 +1,7 @@
-FROM mhart/alpine-node:8
+FROM node:alpine
 
 RUN mkdir -p /opt/app
-
+RUN apk add --no-cache libc6-compat
 ENV NODE_ENV production
 ENV PORT 8080
 EXPOSE 8080
