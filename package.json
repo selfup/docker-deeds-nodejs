@@ -1,8 +1,7 @@
 {
   "name": "docker-deeds-nodejs",
-  "private": true,
   "version": "1.0.0",
-  "description": "Node - nodemon - mon",
+  "description": "Node - Nodemon - Docker",
   "author": "Regis Boudinot (selfup)",
   "main": "index.js",
   "scripts": {
