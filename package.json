@@ -6,9 +6,9 @@
   "author": "Regis Boudinot (selfup)",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon --inspect=0.0.0.0:4343",
-    "windows-dev": "nodemon --legacy-watch --inspect=0.0.0.0:4343"
+    "start": "node app/index.js",
+    "dev": "nodemon ./app/index.js --inspect=0.0.0.0:4343",
+    "windows-dev": "nodemon ./app/index.js --legacy-watch --inspect=0.0.0.0:4343"
   },
   "dependencies": {
     "express": "^4.14.1",
